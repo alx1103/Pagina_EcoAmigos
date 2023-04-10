@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    margin-top: -20%;
+    width: 100px;
+    height: 100px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #AAC42A;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a.active, li a:hover{
+   border-bottom: 1px solid #AAC42A;
+    transition: .2s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #AAC42A;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.hogar h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #AAC42A;
+    font-size: 50px;
+    margin-top: 5%;
+}
+.conte1{
+    display: flex;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.tarjeta{
+    font-family: sans-serif;
+    width: 30%;
+    margin-left: 10%;
+  }
+  .tarjeta .img-container{
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+    border-radius: 15px;
+  }
+  .tarjeta .img-container img{
+    width: 105%;
+    position: absolute;
+    top: -10%;
+    transition: all 0.5s;
+  }
+  .tarjeta .img-container img:hover{
+    transform: scale(1.2);
+  }
+  .tarjeta .img-container .promo{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: yellow;
+    padding: 15px;
+    color: black;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .tarjeta .info-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .tarjeta .info-container h3{
+    margin: 0;
+    font-size: 25px;
+    color: #AAC42A;
+  }
+  .tarjeta .info-container h3,
+  .tarjeta .info-container strong,
+  .tarjeta .info-container span{
+    padding: 5px 15px;
+    width: 100%;
+  }
+  .tarjeta .info-container .add-cart {
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: #AAC42A;
+    padding: 15px;
+    border: 1px solid #AAC42A;
+    border-radius: 25px;
+  }
+  .tarjeta .add-cart:hover{
+    color: black;
+    background-color: transparent;
+    border: 1px solid #AAC42A ;
+  }
+  
+section{
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrar{
+    animation: mostrar 1s; 
+}
+
+@keyframes mostrar{
+    0%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 858px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        z-index: 3;
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:  #AAC42A;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+@media (max-width: 858px){
+    .hogar h2{
+        display: block;
+    }
+    .conte1{
+        display: block;
+        margin-right: -90%;
+        margin-top: 60px;  
+    }
+
+    .tarjeta{
+        margin-top: 50px;
+    }
+    .tarjeta .img-container img{
+        z-index: 0;
+    }
+
+}
+
+@media (max-width: 858px) {
+    footer .container__footer {
+        margin-top: 150%;
+    }
+    .box__footer .logo{
+        margin-left: 12%;
+    }
+}
+
+
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 50px 0px;
+    background-size: cover;
+    margin-top: 50%;
+    
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 220px;
+    margin-top: -30px;
+    margin-left: 10%;
+
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 90px;
+    font-weight: 500;
+    color: #AAC42A;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #AAC42A;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    color: #AAC42A;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #AAC42A;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #AAC42A;
+}

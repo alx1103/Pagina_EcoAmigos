@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:ital,wght@0,500;1,500&family=Poppins&display=swap');
+
+
+
+/*------------------header-----------------------------*/
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-------logo----------------*/
+.logo{
+    width: 120px;
+    height: 100%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+/*----------------------------*/
+/*------------iconos------------*/
+.iconos{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+.iconos a{
+    color: #AAC42A;
+    text-decoration: none;
+    cursor: pointer;
+}
+.iconos a i{
+    font-size: 20px;
+}
+/*----------------------------------*/
+/*---------------menu hamburguesa----------*/
+.bm{
+    width: 30px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 37px;
+    cursor: pointer;
+}
+.bm .line1{
+    width: 100%;
+    height: 3px;
+    background-color: #AAC42A;
+    position: absolute;
+    top: 0;
+    transition: all 500ms ease;
+}
+.bm .line2{
+    width: 100%;
+    height: 3px;
+    background-color: #AAC42A;
+    position: absolute;
+    top: 7px;
+    transition: all 500ms ease;
+}
+.bm .line3{
+    width: 100%;
+    height: 3px;
+    background-color: #AAC42A;
+    position: absolute;
+    top: 15px;
+    transition: all 500ms ease;
+}
+
+#ln1.mover1{
+    top: 8px;
+    transform: rotate(-140deg);
+}
+#ln2.mover2{
+    opacity: 0;
+}
+#ln3.mover3{
+    top: 8px;
+    transform: rotate(140deg);
+}
+/*-----------------------------------------*/
+/*------------------------------------------------------*/
+/*----------navegador-----------------------------------*/
+.main-nav{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: 1000;
+    background-color:#AAC42A;
+}
+#mainNav.movernav{
+    margin-left: 0;
+    overflow: visible;
+    opacity: 1;
+}
+.main-nav nav{
+    width: 100%;
+    height: 100%;
+}
+nav .lista{
+    display: block;
+    padding: 15px;
+}
+
+nav .lista a{
+    color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+nav .lista a:hover{
+    text-decoration: underline;
+   
+}
+
+nav .listaS{
+    padding: 0px;
+}
+
+nav .boton-t{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+}
+.boton-t i{
+    color: white;
+    position: absolute;
+    top: 12px;
+}
+
+nav .sub-lista{
+    width: 100%;
+    transition: all 500ms ease;
+}
+nav .sub-lista .lista-s{
+    display: block;
+    
+    padding: 15px;
+}
+
+nav .sub-lista .lista-s a{
+    color: black;
+    color: white;
+}
+
+.sub-lista{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+/*-----------------------------------------------------*/
+
+/*---------------------banner--------------------------*/
+
+.main-banner{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+/*.circuloP{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4e7a4e;
+    clip-path: circle(300px at right 400px);
+}
+
+.circuloP2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4e7a4e;
+    background-color:#AAC42A;
+    clip-path: circle(300px at left 100px);
+}*/
+
+.con-banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.ban-text{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+.ban-text h2{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.ban-text p{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.ban-text a{
+    border: 0px;
+    padding: 5px 10px;
+    color: white;
+    margin-left: 110px;
+    background-color: #AAC42A;
+}
+
+.ban-text a:hover{
+    background-color: green;
+}
+
+
+.ban-img{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ban-img img{
+    width: 300px;
+    height: 100%;
+}
+
+.ban-botones{
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+}
+
+.ban-botones ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ban-botones ul li{
+    list-style: none;
+}
+
+.ban-botones img{
+    width: 60px;
+}
+
+.ban-botones ul li:hover{
+    transform: translateY(-10px);
+    transition: all ease 1s;
+}
+/*------------------------tarjetas-------------------*/
+
+.titulo-tarjeta{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 25px;
+}
+
+.main-tarjetas{
+    width: 100%;
+    height: auto;
+}
+
+.con-tarjetas{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+    margin: 20px 20px;
+    background-color: #dacf97;
+}
+
+.tarjeta h3{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.img-tar{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.img-tar img{
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta a{
+    width: 100%;
+    height: 50px;
+  
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 5px 20px;
+    margin-left: 55px;
+}
+.tarjeta a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*-----------oferta y anucios---------------------*/
+
+.titulo-anuncios{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 25px;
+}
+
+.main-anuncios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.anuncioa{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #dacf97;
+    color: white;
+}
+
+.pro-per p{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.pro-per a{
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+.pro-per a:hover{
+    color: black;
+    background-color: white;
+}
+
+.anunciob{
+    width: 100%;
+    
+}
+
+.ofertas{
+    width: 100%;
+    display: flex;
+}
+
+.ofertas img{
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.nuevo{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+
+/*-------------Acerca productos------------*/
+
+.titulo-acerca{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 25px;
+}
+
+.main-acerca{
+    width: 100%;
+    height: auto;
+}
+.con-acerca{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.circulo{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color:#AAC42A;
+    clip-path: circle(150px at center);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.circulo h3{
+    margin-bottom:20px;
+    font-family: 'Poppins', sans-serif;
+}
+.circulo p{
+    font-family: 'Bodoni Moda', serif;
+}
+
+
+/*----------noticia------------------*/
+.ti-no{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 25px;
+}
+
+.main-noticias{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-not{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticia{
+    width: 270px;
+    height: 100%;
+    margin: 20px 20px;
+}
+
+.noticia img{
+    width: 100%;
+    height: 200px;
+}
+
+.not-t h3{
+    text-align: center;
+}
+.not-t p{
+    padding: 10px;
+}
+.not-t a{
+    padding-left: 10px;
+}
+.not-t a:hover{
+    text-decoration: underline;
+}
+
+
+/*--------------footer----------------------*/
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-size: cover;
+    border: 3px solid #AAC42A;
+    margin-top: 50px;
+    
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 220px;
+    height: auto;
+    margin-top: -130%;
+    margin-left: 20%;
+
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 70px;
+    font-weight: 500;
+    color: #AAC42A;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #AAC42A;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    color: #AAC42A;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #AAC42A;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #AAC42A;
+}
+/*-----------------------------------------------------*/
+
+/*-------------------responsive-----------------------*/
+@media screen and (min-width:400px){
+    .ban-botones{
+        margin-top: 20px;
+        left: 16%;
+    }
+}
+
+@media screen and (min-width:600px){
+    .ban-text{
+        width: 100%;
+        height: 200px;
+        padding: 50px;
+    }
+
+    .main-anuncios{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    /*
+
+    .anuncioa{
+        width: 40%;
+        height: 500px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .anunciob{
+        width: 40%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+
+     */
+
+}
+
+@media screen and (min-width:700px){
+
+    .con-banner{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+    }
+
+    .ban-text{
+        margin-top: 120px;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        padding-left: 30px;
+       
+    }
+
+    .ban-text p{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    .ban-img{
+        
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        /*border: 1px solid black;*/
+    }
+
+    .ban-botones{
+        width: 300px;
+        height: 80px;
+        position: absolute;
+        top: 70%;
+        left: 10%;
+    }
+
+
+    /*tarjetas*/
+
+    .main-tarjetas{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .con-tarjetas{
+        width: 100%;
+        max-width: 900px;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (min-width:900px){
+
+   /* .circuloP{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #4e7a4e;
+        background-color: #d0ac7a;
+        clip-path: circle(400px at right 400px);
+    }
+*/
+
+    .cuadrado{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #AAC42A;
+        width: 300px;
+        height: 100%;
+    }
+
+    .ban-text{
+        margin-top: 30px;
+        width: 100%;
+        height: 200px;
+        padding: 30px;
+        padding-left: 60px;
+       
+    }
+
+    .ban-text h2{
+        font-size: 40px;
+        margin-left: 50px;
+        margin-left: 110px;
+    }
+
+
+    .ban-text p{
+        width: 70%;
+        font-size: 18px;
+        margin-left: 110px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    .ban-img{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .ban-img img{
+        width: 400px;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    .ban-botones{
+        width: 300px;
+        height: 80px;
+        position: absolute;
+        top: 60%;
+        left: 15%;
+    }
+
+    .ban-botones li{
+        border-radius: 40px;
+        background-color: #dacf97;
+    }
+
+    .main-anuncios{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+
+
+    .anuncioa{
+        width: 100%;
+        height: 400px;
+        margin-right: 5px;
+    }
+    .anuncioa img{
+        height: 300px;
+        width: 250px;
+    }
+
+ 
+
+    .pro-per h3{
+        font-size: 30px;
+        padding: 15px;
+    }
+    
+    .pro-per p{
+        margin-left: 15px;
+    }
+
+    .pro-per a{
+        padding: 5px 10px;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,591 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    margin-top: -25%;
+    width: 80px;
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #AAC42A;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+
+}
+li a.active, li a:hover{
+   border-bottom: 1px solid #AAC42A;
+    transition: .2s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #AAC42A;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.vidu {
+    width: 100%;
+    height: 100vh;
+}
+
+.vidu img{
+    margin-left: 5%;
+}
+
+.conte .text{
+    margin-top: 10%;
+    text-align: center;
+    margin-left: -40%;
+}
+.text h1{
+    font-size: 50px;
+    font-family:sans-serif
+}
+.text p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text strong{
+    font-size: 30px;
+}
+.text3 h2{
+    font-size: 40px;
+    text-align:initial;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.text3 p{
+    text-align:initial;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 5%;
+}
+.text3 h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    text-align: center;
+    color: #AAC42A;
+  
+}
+.text2 h2{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAC42A;
+}
+
+.conte1{
+    display:flex;
+
+}
+.conte1 .fotos img{
+    width: 35%;
+    height: 80vh;
+    margin-left: 10%
+}
+.login-box {
+    width: 400px;
+    height: 600px;
+    color: black;
+    top: 80%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 80px 40px;
+    border-radius: 20px;
+  }
+  
+  .login-box .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left: calc(40% - 40px);
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #AAC42A;
+    margin-top: -5%;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .login-box ::placeholder{
+    color: #AAC42A;
+    opacity: 60%;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #AAC42A;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+  }
+
+  .login-box input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #AAC42A;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #AAC42A;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #AAC42A;
+  }
+  
+  .login-box a:hover {
+    color: black;
+  }
+  
+
+
+.conte .vidu img{
+    -moz-transition: all 100ms ease-in-out;
+
+   -webkit-transition: all 1000ms ease-in-out;
+
+
+   transition: all 500ms ease-in-out;
+}
+
+
+
+.vidu img:hover{
+    transform: scale(0.9,0.9);
+}
+
+.conte1 .fotos img{
+    -moz-transition: all 100ms ease-in-out;
+
+    -webkit-transition: all 1000ms ease-in-out;
+ 
+ 
+    transition: all 500ms ease-in-out;
+}
+
+.fotos img:hover{
+    transform: scale(0.9,0.9);
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 50px 0px;
+    background-size: cover;
+    margin-top: 50%;
+    
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 220px;
+    margin-top: -30px;
+    margin-left: 10%;
+
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 90px;
+    font-weight: 500;
+    color: #AAC42A;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #AAC42A;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    color: #AAC42A;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #AAC42A;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #AAC42A;
+}
+
+@media (max-width: 858px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-right: 10%;
+    }
+    ul{
+        z-index: 3;
+        position: fixed;
+        width: 45%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:  #AAC42A;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+@media (max-width: 858px){
+
+    .inicio{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .conte{
+        display: block;
+    }
+    .conte .vidu img{
+        width: 40%;
+        height: 40vh;
+        margin-left: 25%;
+    }
+
+    .conte .text{
+        margin-top: -50%;
+        margin-left: -10%;
+    }
+    .conte .text p{
+        font-size: 20px;
+    }
+
+    .conte .text3{
+        margin-top: -10%;
+        margin-left: -10%;
+    }
+    .conte .text3 h2{
+        margin-left: 32%;
+        font-size: 20px;
+    }
+
+    .conte .text3 p{
+        font-size: 15px;
+        padding: 5px;
+        margin-right: 35%;
+        margin-left: 32%;
+
+    }
+
+    .login-box{
+        margin-top: 100%;
+        margin-left: -30%;
+    }
+    
+    .text2 {
+        margin-top: 100%;
+        margin-left: -10%;
+    }
+
+    .conte1 .fotos img{
+        display: flex;
+        width: 80%;
+        height: 40vh;
+        padding: 5%;
+        margin-left: 80%;
+        height: 40vh;
+    }
+
+    .login-box .avatar{
+        margin-left: 20%;
+    }
+}
+
+
+@media (max-width: 858px) {
+    footer .container__footer {
+        margin-top: 5%;
+    }
+    .container__footer .box__copyright{
+        margin-right: 25%;
+    }
+    .box__footer .logo{
+        margin-top: -20%;
+        margin-left: -6%;
+        padding: 15%;
+    }
+    .box__footer .terms{
+        margin-top: 40%;
+    }
+}
+
+
+@media (max-width: 630px){
+    .checkbtn{
+        display: block;
+        margin-right: 10%;
+    }
+    ul{
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:  #AAC42A;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+@media (max-width: 630px){
+    
+    .inicio{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .conte{
+        display: block;
+    }
+    .conte .vidu img{
+        width: 50%;
+        height: 50vh;
+        margin-left: 27%;
+    }
+
+    .conte .text{
+        margin-top: -80%;
+        margin-left: 2%;
+    }
+    .conte .text p{
+        font-size: 20px;
+    }
+
+    .conte .text3{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .conte .text3 h2{
+        margin-left: 5%;
+        font-size: 20px;
+    }
+
+    .conte .text3 p{
+        font-size: 15px;
+        padding: 5px;
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+
+    .login-box{
+        margin-top: 170%;
+        margin-left: -25%;
+    }
+    
+    .text2 {
+        margin-top: 150%;
+        margin-left: 1%;
+    }
+
+    .conte1 .fotos img{
+        display: flex;
+        width: 80%;
+        height: 40vh;
+        padding: 5%;
+        margin-left: 30%;
+        height: 40vh;
+    }
+
+    .login-box .avatar{
+        margin-left: 25%;
+    }
+}
+
+
+@media (max-width: 858px) {
+    footer .container__footer {
+        margin-top: 5%;
+    }
+    .container__footer .box__copyright{
+        margin-right: 25%;
+    }
+    .box__footer .logo{
+        margin-top: -20%;
+        margin-left: -6%;
+        padding: 15%;
+    }
+    .box__footer .terms{
+        margin-top: 40%;
+    }
+}
+
+
+@media (max-width: 630px) {
+    footer .container__footer {
+        margin-top: 5%;
+    }
+    .container__footer .box__copyright{
+        margin-right: 0%;
+    }
+    .box__footer .logo{
+        margin-top: -20%;
+        margin-left: -6%;
+        padding: 15%;
+    }
+    .box__footer .terms{
+        margin-top: 40%;
+    }
+}

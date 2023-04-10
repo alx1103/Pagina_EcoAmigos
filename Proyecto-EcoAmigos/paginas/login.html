@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | EcoAmigos</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="shorcut icon" href="../img/logoecoamigos.png" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/login.css">
+  </head>
+  <body>
+    <main>
+      <form method="POST" action="" class="formulario"  id="frmlogueo" onsubmit="cargar(this)">
+        <div class="logo">
+          <img src="../img/logoecoamigos.png" alt="">
+          <h1>!Inicia tu ecosesión¡</h1>
+        </div>
+        <div class="formulario__grupo" id="grupo__usuario">
+          <label for="usuario" class="formulario__label">Usuario</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="txtusuario" id="usuario" placeholder="Escriba su Usuario">
+          </div>
+        <div class="formulario__grupo" id="grupo__password">
+          <label for="password" class="formulario__label">Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="txtclave" id="password" placeholder="Ingrese Contraseña">
+          </div>
+        </div>
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit"  class="formulario__btn">Ingresar</button>
+          <div class="regresar">
+            <div class="menuprin">
+              <a href="../index.html">volver al menú principal</a>
+            </div>
+            <b>¿Aún No tienes cuenta?<a href="../paginas/registro.html">¡Crea Una!</a></b><br> <br>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script src="../js/login.js"></script>

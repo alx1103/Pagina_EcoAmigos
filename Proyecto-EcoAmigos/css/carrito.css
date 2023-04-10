@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    margin-top: -25%;
+    width: 80px;
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #AAC42A;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li a.active, li a:hover{
+   border-bottom: 1px solid #AAC42A;
+    transition: .2s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #AAC42A;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:  #AAC42A;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+.conte1 .titulo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3%;
+    color: #AAC42A;
+    font-size: 50px;
+    text-align: center;
+}
+
+.conte1 .titulo h1:hover{
+    color: black;
+}
+
+
+.tarjeta{
+    font-family: sans-serif;
+    width: 80%;
+    height: 50vh;
+    margin-left: 10%;
+    margin-top: 5%;
+    background: whitesmoke;
+    border: 1px solid white;
+  }
+  .tarjeta .info-container{
+    text-align:start;
+    justify-content: center;
+  }
+  .tarjeta .info-container h3{
+    margin: 0;
+  }
+  .tarjeta .info-container h1{
+    padding: 5px 15px;
+    width: 100%;
+    margin-top: -18%;
+    margin-left: 27%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .tarjeta .info-container p{
+    padding: 5px 15px;
+    width: 100%;
+    margin-top: -1%;
+    margin-left: 27%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .tarjeta .info-container span{
+    padding: 5px 15px;
+    width: 100%;
+    color: #AAC42A;
+    font-size: 25px;
+  }
+ .tarjeta .info-container .check{
+     font-size: 15px;
+     margin-top: -4%;
+ }
+  .tarjeta .info-container strong{
+      margin-left: 83%;
+      margin-top: 10px;
+      font-size: 40px;
+      color: #AAC42A;
+  }
+  .tarjeta .info-container  a{
+    margin-left: 60%;
+    margin-top: 111%;
+    text-align: end;
+    text-decoration: none;
+    color: #AAC42A;
+    padding: 15px;
+    border: 1px solid #AAC42A;
+    
+  }
+  .tarjeta .info-container  b{
+    margin-left: 85%;
+  }
+  .tarjeta .info-container a:hover{
+      color: black;
+      background: #AAC42A;
+  }
+  .tarjeta .info-container img{
+      width: 25%;
+      margin-top: 20px;
+      margin-left: 2%;
+  }
+  .tarjeta .info-container img:hover{
+     transform: scale(1.2);
+  }
+  
+  .conte1 .comprar {
+      margin-top: 8%;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      
+  }
+  .conte1 .comprar a{
+      color: white;
+      background-color: #AAC42A;
+      padding: 15px;
+    
+  }
+  .conte1 .comprar a:hover{
+      color: white;
+  }
+ 
+.caja {
+    margin-left: 55%;
+    margin-top: -15%;
+    border:1px solid #d9d9d9;
+    height:30px;
+    overflow: hidden;
+    width: 20%;
+    position:relative;
+ }
+ select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+ }
+ select:focus{ outline: none;}
+ 
+ .caja::after{
+     content:"\025be";
+     display:table-cell;
+     padding-top:7px;
+     text-align:center;
+     width:30px;
+     height:30px;
+     background-color:#AAC42A;
+     position:absolute;
+     top:0;
+     right:0px;	
+     pointer-events: none;
+ }
+
+
+ footer{
+    width: 100%;
+    height: 50vh;
+    padding: 50px 0px;
+    background-size: cover;
+    margin-top: 50%;
+    
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: none;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 220px;
+    margin-top: -30px;
+    margin-left: 10%;
+
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 90px;
+    font-weight: 500;
+    color: #AAC42A;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #AAC42A;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    color: #AAC42A;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #AAC42A;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #AAC42A;
+}
